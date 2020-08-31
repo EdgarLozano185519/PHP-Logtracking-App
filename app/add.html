@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <title>Add Item to Backlog</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+    <script src="./validate-form.js"></script>
+  </head>
+  <body>
+    <h1>Add An Item</h1>
+    <p>Add an item to the backlog in the form provided.</p>
+    <form action="index.php" method="post" name="add_form">
+      <div>
+        <label>Requestor: <input type="text" id="requestor" name="requestor" required></label>
+      </div>
+      <div>
+        <label>Tool Name: <input type="text" id="tool_name" name="tool_name" required></label>
+      </div>
+      <div>
+        <label>Type: <input type="text" name="type"></label>
+      </div>
+      <div>
+        <label>Description: <input type="text" name="description"></label>
+      </div>
+      <div>
+        <label>Priority: <input type="text" name="priority"></label>
+      </div>
+      <div>
+        <label>Status: <input type="text" name="status"></label>
+      </div>
+      <div>
+        <label>Fix Confirm: <input type="text" name="fix_confirm" required></label>
+      </div>
+      <div>
+        <label>Tester: <input type="text" name="tester"></label>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form>
+  </body>
+</html>
